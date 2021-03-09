@@ -1,0 +1,50 @@
+.products-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 4.4rem;
+  width: 80%;
+  max-width: 120rem;
+  margin: $spacing-huge auto;
+}
+.products-element{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 2.5rem 2rem;
+  background-color: $white;
+  box-shadow: $box-shadow;
+  border-radius: $radius;
+}
+.products-element__name{
+  margin-bottom: auto;
+  font-weight: bold;
+}
+.products-element__img{
+  height: 100%;
+  width: 22rem;
+  object-fit: contain;
+  margin-top: $spacing-medium;
+
+}
+.products-element__price{
+  margin-top: $spacing-medium;
+  margin-bottom: 1rem;
+}
+.products-element__btn{
+  margin-top: $spacing-medium;
+  padding: $spacing-small $spacing-medium;
+  border: 1px solid  #c4c4c4;
+  border-radius: $radius;
+  cursor: pointer;
+  outline: none;
+  background: none;
+  font:{
+    size: inherit;
+    family: inherit;
+  }
+}
+.products-element__btn_active{
+  border: 1px solid  transparent;
+  background: $box-gradient ;
+
+}
